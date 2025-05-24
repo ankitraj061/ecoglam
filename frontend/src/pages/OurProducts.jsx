@@ -4,7 +4,7 @@ import ProductCard from '../components/ProductCard';
 import myProducts from '../data/myProducts.json';
 import { Search, Filter, X, ChevronDown, ChevronUp } from 'lucide-react';
 
-import CartSidebar from '../components/cart/CartSideBar';
+
 
 const OurProducts = () => {
   const { products, addProduct, removeProduct } = useCart();
@@ -369,7 +369,7 @@ const OurProducts = () => {
 
         </div>
       </div>
-        <CartSidebar isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
+       
     </section>
 
   );
