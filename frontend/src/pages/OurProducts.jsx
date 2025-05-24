@@ -17,7 +17,7 @@ const OurProducts = () => {
   const [selectedRating, setSelectedRating] = useState('');
   const [sortBy, setSortBy] = useState('');
 
-  const [isCartOpen, setIsCartOpen] = useState(false);
+
   
   // Collapsible sections
   const [expandedSections, setExpandedSections] = useState({
