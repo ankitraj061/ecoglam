@@ -3,6 +3,7 @@ import { useCart } from '../context/ProductContext';
 import ProductCard from '../components/ProductCard';
 import myProducts from '../data/myProducts.json';
 import { Search, Filter, X, ChevronDown, ChevronUp } from 'lucide-react';
+import CartSidebar from '../components/cart/CartSideBar';
 
 
 
@@ -16,6 +17,8 @@ const OurProducts = () => {
   const [priceRange, setPriceRange] = useState({ min: '', max: '' });
   const [selectedRating, setSelectedRating] = useState('');
   const [sortBy, setSortBy] = useState('');
+
+  const [isCartOpen, setIsCartOpen] = useState(false);
 
 
   
@@ -369,6 +372,14 @@ const OurProducts = () => {
 
         </div>
       </div>
+      {isCartOpen && (
+        <CartSidebar
+          isOpen={isCartOpen}
+          onClose={() => setIsCartOpen(false)}
+          products={products}
+          onRemove={removeProduct}
+        />
+      )}
        
     </section>
 
