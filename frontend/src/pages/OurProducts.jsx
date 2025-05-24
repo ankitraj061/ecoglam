@@ -3,7 +3,7 @@ import { useCart } from '../context/ProductContext';
 import ProductCard from '../components/ProductCard';
 import myProducts from '../data/myProducts.json';
 import { Search, Filter, X, ChevronDown, ChevronUp } from 'lucide-react';
-import CartSidebar from '../components/cart/CartSideBar';
+import CartSidebar from '../components/cart/CartSidebar';
 
 
 
