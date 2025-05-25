@@ -106,10 +106,10 @@ const PersonalizedCare = () => {
             </p>
             <div className="inline-flex items-center">
               <div className="flex -space-x-2 mr-4">
-                <div className="h-8 w-8 rounded-full bg-emerald-300 flex items-center justify-center text-white text-xs font-bold">JD</div>
+                <div className="h-8 w-8 rounded-full bg-emerald-300 flex items-center justify-center text-white text-xs font-bold">PS</div>
               </div>
               <div className="text-left">
-                <p className="text-sm font-semibold text-gray-900">Jessica D.</p>
+                <p className="text-sm font-semibold text-gray-900"> Dr. Priya Saha</p>
                 <div className="flex items-center">
                   {[...Array(5)].map((_, i) => (
                     <svg key={i} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

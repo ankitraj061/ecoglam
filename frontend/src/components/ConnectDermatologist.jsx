@@ -201,6 +201,26 @@ const ConnectDermatologist = () => {
                   </div>
 
                   <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">Gender</label>
+                    <select
+                      required
+                      value={bookingForm.gender}
+                      onChange={(e) =>
+                        setBookingForm({ ...bookingForm, gender: e.target.value })
+                      }
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:border-pink-500 focus:outline-none transition-colors"
+                    >
+                      <option value="" disabled>
+                        Select your gender
+                      </option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+
+
+                  <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">Email</label>
                     <input
                       type="email"

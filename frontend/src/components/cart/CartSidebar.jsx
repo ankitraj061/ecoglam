@@ -32,7 +32,7 @@ const CartSidebar = ({ isOpen, onClose }) => {
     return sum + parsePrice(product.price) * product.quantity;
   }, 0);
 
-  const deliveryThreshold = 1000;
+  const deliveryThreshold = 500;
   const remainingForFreeDelivery = Math.max(0, deliveryThreshold - subtotal);
   const progressPercentage = Math.min(100, (subtotal / deliveryThreshold) * 100);
 
@@ -210,14 +210,6 @@ const CartSidebar = ({ isOpen, onClose }) => {
               >
                 Continue Shopping
               </button>
-            </div>
-
-            {/* Additional Info */}
-            <div className="mt-3 text-center">
-              <p className="text-xs text-gray-500 flex items-center justify-center gap-1">
-                <Heart size={10} className="text-red-400" />
-                Secure checkout • Free return
-              </p>
             </div>
           </div>
         )}
