@@ -10,7 +10,7 @@ const Delivery = () => {
             <h2 className="text-3xl font-serif mb-4">Fast & Reliable Delivery</h2>
             <p className="text-emerald-100 text-lg">
               We understand that you want your products as soon as possible! 
-              That's why we offer 2-3 day delivery for all orders, ensuring 
+              That's why we offer 2-3 days delivery nation-wide, ensuring 
               you get your EcoGlam products in no time!
             </p>
           </div>
