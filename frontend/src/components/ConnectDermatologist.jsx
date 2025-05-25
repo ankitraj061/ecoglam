@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { PhoneCall, Calendar, MessageCircle, Clock, CheckCircle, X, User, Mail, Phone } from "lucide-react";
+import  { useState } from "react";
+import {  Calendar, MessageCircle, CheckCircle, X, User,} from "lucide-react";
 
 const ConnectDermatologist = () => {
   const [showBookingModal, setShowBookingModal] = useState(false);
