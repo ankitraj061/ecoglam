@@ -12,7 +12,6 @@ const OurProducts = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   
-  // Filter states
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [priceRange, setPriceRange] = useState({ min: '', max: '' });
   const [selectedRating, setSelectedRating] = useState('');
@@ -22,7 +21,7 @@ const OurProducts = () => {
 
 
   
-  // Collapsible sections
+
   const [expandedSections, setExpandedSections] = useState({
     categories: true,
     price: true,
@@ -46,15 +45,14 @@ const OurProducts = () => {
     return products.find((el) => el.id === id);
   };
 
-  // Get unique categories from products
+  
   const categories = [...new Set(myProducts.map(product => product.category))].filter(Boolean);
 
-  // Get price range from products
+  
   const prices = myProducts.map(product => parseFloat(product.price.replace('₹', '').replace(/,/g, '')));
   const minPrice = Math.min(...prices);
   const maxPrice = Math.max(...prices);
 
-  // Toggle category filter
   const toggleCategory = (category) => {
     setSelectedCategories(prev => 
       prev.includes(category) 
@@ -63,7 +61,6 @@ const OurProducts = () => {
     );
   };
 
-  // Toggle section expansion
   const toggleSection = (section) => {
     setExpandedSections(prev => ({
       ...prev,
@@ -71,7 +68,6 @@ const OurProducts = () => {
     }));
   };
 
-  // Clear all filters
   const clearAllFilters = () => {
     setSelectedCategories([]);
     setPriceRange({ min: '', max: '' });
@@ -80,28 +76,28 @@ const OurProducts = () => {
     setSearchTerm('');
   };
 
-  // Filter and sort products
+
   const getFilteredProducts = () => {
     let filtered = myProducts.filter(product => {
       // Search filter
       const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase());
       
-      // Category filter
+      
       const matchesCategory = selectedCategories.length === 0 || 
         selectedCategories.includes(product.category);
       
-      // Price filter
+    
       const productPrice = parseFloat(product.price.replace('₹', '').replace(/,/g, ''));
       const matchesPrice = (!priceRange.min || productPrice >= parseFloat(priceRange.min)) &&
         (!priceRange.max || productPrice <= parseFloat(priceRange.max));
       
-      // Rating filter
+      
       const matchesRating = !selectedRating || product.rating >= parseFloat(selectedRating);
       
       return matchesSearch && matchesCategory && matchesPrice && matchesRating;
     });
 
-    // Sort products
+    
     if (sortBy === 'price-low') {
       filtered.sort((a, b) => {
         const priceA = parseFloat(a.price.replace('₹', '').replace(/,/g, ''));

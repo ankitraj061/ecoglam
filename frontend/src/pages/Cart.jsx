@@ -24,12 +24,12 @@ const Cart = () => {
   const [orderPlaced, setOrderPlaced] = useState(false);
   const [orderNumber, setOrderNumber] = useState("");
   const navigate = useNavigate();
-  const { user } = useAuth(); // Get user data from AuthContext
+  const { user } = useAuth(); 
 
   const [deliveryAddress, setDeliveryAddress] = useState(null);
 
 
-  // Parse price from string
+  
   const parsePrice = (priceStr) => {
     if (priceStr && typeof priceStr === "string" && priceStr.includes("₹")) {
       return Number(priceStr.split("₹")[1]);
@@ -37,12 +37,11 @@ const Cart = () => {
     return 0;
   };
 
-  // Format currency
   const formatCurrency = (amount) => {
     return "₹" + amount.toFixed(2);
   };
 
-  // Calculate cart totals
+
   const subtotal = products.reduce((sum, product) => {
     return sum + parsePrice(product.price) * product.quantity;
   }, 0);

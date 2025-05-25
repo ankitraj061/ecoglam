@@ -166,7 +166,6 @@ function SkincareQuiz() {
       return false;
     });
 
-    // Get product names, limit to 6 products for better display
     const productNames = filteredProducts.slice(0, 6).map(product => product.name || product.title);
 
     return {
