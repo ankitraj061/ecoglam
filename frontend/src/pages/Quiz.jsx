@@ -216,9 +216,7 @@ function SkincareQuiz() {
         <div className="max-w-4xl w-full">
           {/* Header */}
           <div className="text-center mb-8">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full mb-4">
-              <Sparkles className="w-8 h-8 text-white" />
-            </div>
+            
             <h1 className="text-3xl font-bold text-gray-800 mb-2">
               Hi {name}! ✨
             </h1>
@@ -322,9 +320,6 @@ function SkincareQuiz() {
         {step === 0 && (
           <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 border border-gray-100">
             <div className="text-center mb-8">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full mb-6">
-                <Sparkles className="w-10 h-10 text-white" />
-              </div>
               <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 leading-tight">
                 Discover Your Perfect
                 <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent"> Skincare Routine</span>
