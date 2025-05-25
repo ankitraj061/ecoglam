@@ -381,7 +381,7 @@ const ConnectDermatologist = () => {
         <div className="flex flex-col sm:flex-row gap-4">
           <button className="flex items-center gap-2 bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-full font-medium transition-all shadow-lg">
             <Calendar size={18} />
-            Book an Appointment
+            Book an Appointment!
           </button>
           <button className="flex items-center gap-2 border border-pink-500 text-pink-600 px-6 py-3 rounded-full font-medium hover:bg-pink-50 transition-all">
             <MessageCircle size={18} />
