@@ -112,7 +112,6 @@ const FaceProductsChatbot = () => {
           className="bg-gradient-to-r from-pink-500 to-purple-600 text-white p-4 rounded-full shadow-lg hover:scale-105 transition"
         >
           <MessageCircle size={24} />
-          <Sparkles className="absolute -top-1 -right-1 w-4 h-4" />
         </button>
       ) : (
         <div className="bg-white rounded-2xl shadow-2xl w-96 h-[500px] flex flex-col overflow-hidden border border-gray-200">
