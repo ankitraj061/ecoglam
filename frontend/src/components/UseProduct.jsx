@@ -118,10 +118,10 @@ const UseProduct = () => {
                   <div className="flex items-center justify-between">
                     <div>
                       <p className="text-xs font-semibold text-pink-600 uppercase">Featured Product</p>
-                      <p className="text-lg font-bold text-gray-900">Rejuvenating Night Cream</p>
+                      <p className="text-lg font-bold text-gray-900">Calm and Soothe Moisturizer</p>
                     </div>
                     <div className="bg-pink-500 text-white rounded-lg px-3 py-1 text-sm font-bold">
-                      49.99
+                       ₹ 349
                     </div>
                   </div>
                 </div>
