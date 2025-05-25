@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { useState } from "react";
 import OurProducts from "./pages/OurProducts"; 
-
+import ConnectDermatologist from "./components/ConnectDermatologist";
 import Hero from "./components/Hero";
 import Ingredients from "./components/Ingredients";
 import Intro from "./components/Intro";
@@ -59,6 +59,7 @@ function App() {
                   <Hero />
                   <PopularCategory></PopularCategory>
                   <UpcomingCategory></UpcomingCategory>
+                  <ConnectDermatologist />
                   <Intro />
                   <Ingredients />
                   <PersonalizedCare></PersonalizedCare>
