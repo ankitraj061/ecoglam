@@ -44,7 +44,6 @@ const AuthModal = ({
                   className="w-10 h-10 rounded-xl"
                 />
               </div>
-              <Sparkles className="absolute -top-2 -right-2 w-6 h-6 text-yellow-400 animate-pulse" />
             </div>
             
             <h2 className="text-2xl font-bold bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent mb-2">
@@ -211,7 +210,6 @@ const AuthModal = ({
                 ) : (
                   <span className="flex items-center space-x-2">
                     <span>{isLoginForm ? "Sign In" : "Create Account"}</span>
-                    <Sparkles className="h-3 w-3" />
                   </span>
                 )}
               </button>
